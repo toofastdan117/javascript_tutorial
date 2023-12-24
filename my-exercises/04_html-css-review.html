@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Review: Buttons</title>
+
+    <style>
+      .red-button {
+        background-color: red;
+        color: white;
+        border: none;
+      }
+
+      .green-button {
+        background-color: green;
+        color: white;
+        border: none;
+      }
+
+      .button-ex {
+        border-radius: 0;
+        padding: 4px 8px;
+        cursor: pointer;
+      }
+
+      .add-button {
+        background-color: yellow;
+      }
+
+      .buy-button {
+        background-color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    <!-- Video Lesson -->
+    <h1>Video Lesson: HTML CSS Review, console.log</h1>
+    <button title="tooltip 🤡" class="red-button" onclick="alert('Good job!');">
+      Hello
+    </button>
+    <p>
+      Paragraph of <button class="green-button">button</button> text
+    </p>
+
+    <script>
+      // Comments
+      // this code makes a popup
+      //alert('hello');
+      
+      /*
+      multi
+      line
+      comments
+      */
+      
+      console.log(2 + 2);
+      console.log('some' + 'text')
+    </script>
+  </body>
+
+
+
+  <body>
+    
+    <!-- Practice Exercises -->
+    <h1>Practice Exercises</h1>
+    
+    <h3>4a.</h3>
+    <button>Click</button>
+    
+    <h3>4b.</h3>
+    <div>
+      <button>Dan</button>
+      <button>french toast</button>
+    </div>
+
+    <h3>4c-d.</h3>
+    <p>Hello, world!</p>
+    <p>Today I'm going on a bike ride.</p>
+
+    <h3>4e-h.</h3>
+    <div>
+      <button class="button-ex add-button">Add to cart</button>
+      <button class="button-ex buy-button">Buy now</button>
+    </div>
+    <script>
+      console.log("Welcome!")
+    </script>
+
+    <h3>4i-j.</h3>
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <div>
+      <button class="button-ex add-button" onclick="alert('Added');">
+        Add to cart
+      </button>
+      <button class="button-ex buy-button" onclick="console.log('Loading...'); alert('Purchased');">
+        Buy now
+      </button>
+    </div>
+  </body>
+</html>
