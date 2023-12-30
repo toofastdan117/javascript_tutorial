@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10_exercises</title>
+  <link rel="stylesheet" href="styles/10_exercises.css">
+</head>
+<body>
+  <!-- 10a -->
+  <h1>10a</h1>
+  <button class="amazon-button">Add to Cart</button>
+
+  <!-- 10b -->
+  <h1>10b</h1>
+  <button class="uber-button-1">Request now</button>
+  <button class="uber-button-2">Schedule for later</button>
+
+  <!-- 10c -->
+  <h1>10c</h1>
+  <button class="js-button">Test</button>
+
+  <!-- 10d-g -->
+  <h1>10d-g</h1>
+  <button class="js-toggle-gaming toggle-button is-toggled" onclick="toggleButton('gaming')">Gaming</button>
+  <button class="js-toggle-music toggle-button is-toggled" onclick="toggleButton('music')">Music</button>
+  <button class="js-toggle-tech toggle-button is-toggled" onclick="toggleButton('tech')">Tech</button>
+
+  <!-- 10h -->
+  <h1>10h</h1>
+  <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +$10 shipping</p>
+  <p>Orders over $40 = FREE shipping</p>
+  <input class="js-cost-input cost-input" placeholder="Cost of order" type="text" onkeydown="handleCostKeydown(event)">
+  <button class="calculate-button" onclick="calculateTotal()">Calculate</button>
+  <p class="js-total-cost"></p>
+
+  <!-- 10i-j -->
+  <h1>10i-j</h1>
+  <div class="calculator-container">
+    <p class="js-calculation calculation-text"></p>
+    <div>
+      <button class="grey-button" onclick="updateCalculation('1');">1</button>
+      <button class="grey-button" onclick="updateCalculation('2');">2</button>
+      <button class="grey-button" onclick="updateCalculation('3');">3</button>
+      <button class="orange-button" onclick="updateCalculation(' + ');">+</button>
+    </div>
+
+    <div>
+      <button class="grey-button" onclick="updateCalculation('4');">4</button>
+      <button class="grey-button" onclick="updateCalculation('5');">5</button>
+      <button class="grey-button" onclick="updateCalculation('6');">6</button>
+      <button class="orange-button" onclick="updateCalculation(' - ');">-</button>
+    </div>
+
+    <div>
+      <button class="grey-button" onclick="updateCalculation('7');">7</button>
+      <button class="grey-button" onclick="updateCalculation('8');">8</button>
+      <button class="grey-button" onclick="updateCalculation('9');">9</button>
+      <button class="orange-button" onclick="updateCalculation(' * ');">*</button>
+    </div>
+
+    <div>
+      <button class="grey-button" onclick="updateCalculation('0');">0</button>
+      <button class="grey-button" onclick="updateCalculation('.');">.</button>
+      <button class="grey-button" onclick="equals();">=</button>
+      <button class="orange-button"  onclick="updateCalculation(' / ');">/</button>
+    </div>
+
+    <div>
+      <button class="grey-button clear-button" onclick="clearCalculation();">Clear</button>
+    </div>
+  </div>
+  
+
+
+  <!-- Scripts -->
+  <script src="scripts/10_exercises.js"></script>
+  
+</body>
+</html>
